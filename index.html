@@ -350,34 +350,28 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
-        </div>
+  <p>
+    We present NVF-360, a zero-shot framework for 360-degree facial reconstruction that addresses
+    fundamental limitations in diffusion-based novel view synthesis. While recent methods such as
+    Zero123XL exhibit strong generative capacity, they suffer from identity drift under large
+    viewpoint changes, unstable conditioning due to weak geometric priors, and high computational
+    cost.
+  </p>
+  <p>
+    NVF-360 introduces explicit geometric grounding through structure-from-motion based camera
+    initialization, monocular depth priors enforced with cross-view consistency, and CLIP-based
+    semantic correspondence to preserve identity across extreme viewpoints. To further improve
+    training stability, we incorporate person-aware mini-batch sampling with hard identity mining
+    and a hierarchical depth embedding strategy that enables shared computation across views.
+  </p>
+  <p>
+    These design choices enable stable hemispherical novel view synthesis and reliable downstream
+    volumetric reconstruction while maintaining practical computational efficiency. Experimental
+    results demonstrate superior identity preservation and geometric consistency compared to
+    existing diffusion-based approaches, establishing NVF-360 as a robust foundation for monocular
+    3D face reconstruction.
+  </p>
+</div>
       </div>
     </div>
     <!--/ Abstract. -->
